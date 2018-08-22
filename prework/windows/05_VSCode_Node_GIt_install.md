@@ -49,11 +49,15 @@ sudo apt-get install -y nodejs
 The first line will handle getting everything ready. 
 The second line will show up once the first line has finished. Press enter when the second line shows up in your terminal.
 
-### Verify Node on Ubuntu
+#### Verify Node on Ubuntu
 
 1. Close and re-open the Ubuntu app.
 2. Type `node -e 'console.log("works")'`
 3. If you get a response back that says `works` then you're all good to go!
+
+#### Install ESLint on Ubuntu
+1. Run `sudo npm i -g eslint`.
+2. Once that's finished, run `eslint --version` to verify. You should get a version number, not a `command not found` message.
 
 ### Node on Windows
 

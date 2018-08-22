@@ -27,13 +27,12 @@ This command will not return any message unless there is an error.
 
 ### Install Node
 
-To install Node, open your Terminal and copy and paste the following line, then hit Enter:
+To install Node, open your Terminal and copy and paste the following lines, then hit Enter:
 
-`sudo apt-get install nodejs`
-
-Afterwards, you'll want to install Node Package Manager (NPM).
-
-`sudo apt-get install npm`
+```
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install nodejs
+```
 
 If you run into issues trying to install Node from these steps, please contact your instructor.
 
@@ -43,15 +42,15 @@ It will take a few minutes for the download and installation process to complete
 
 Now let's verify that it is installed. Enter the following into your terminal:
 
-`nodejs -e 'console.log("works")'`
+`node -e 'console.log("works")'`
 
 You should get a response that says "works". If not, try reinstalling Node again. If you are still having issues, please contact your instructor.
 
 ### Install ESLint
 
-Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your terminal (Git Bash on Windows) and enter:
+Now that you have Node installed, you can install Node packages using its package manager, **NPM**. Open your terminal and enter:
 
-`npm -g i eslint git-open`
+`sudo npm -g i eslint git-open`
 
 You should see a lot of feedback as it installs.
 
